@@ -1,0 +1,132 @@
+1. self introduction
+My name is Qingqi Lei, I am a current graduate student at Rochester Institute of Technology,
+majoring in Computer Science. I will graduate in August 2022. I earned my bachelor degree in
+Shanghai University in 2019. After graduation in 2019, I worked as a software engineer in
+big data area for 2 years in Shanghai. My experience includes refining and documenting
+requirements, implementing high-level requirements, and producing solutions for clients within
+predefined timelines and scope limitations.
+The applications and features I developed includes database ETL processes on Hive, SQLServer,
+spark streaming processes, Flink streaming processes.
+I am happy to learn new technologies and incorporate them with what I’ve been doing.
+
+2. talk about my work.
+I joined the company after graduation in 2019. My work was about the development of database ETL, Spark
+, and Flink applications and shadowing on-calls. The company provided software solutions for clients, the clients
+were manufacturing, retail, restaurant company. I was mainly involved in the projects for a restaurant company.
+I did some projects about its order and coupon. The order project can show its daily revenue and some indicators
+in real time. The coupon project can show its daily coupon distribution and monitor the distribution in real time.
+I developed these projects and took the responsibility to shadow on-calls for the daily maintenance,
+Sometimes, there were also some new features and requirements I needs to develop.
+
+3. Most challenging project?
+The most challenging project I've done was an coupon distribution monitor application.
+which is a flink streaming application.
+The situation is that the client distributes coupons on their phone app.
+They wanted to distribute some valuable coupons to new customers,
+but the some coupons would always be distributed to existing customers.
+They wanted us to develop a application that can show the percentage of the
+valuable coupons distributed to new customers and alert when the percentage was low.
+
+My manager told me that he would like me and another teammate to implement this requirement.
+It was challenging because I developed some spark applications, but I was not familiar with flink.
+In order to understand the process, I made several appointments with the project manager,
+team manager, and teammates, going through the specification building process with
+them step by step in detail. I searched and read many system designs of alerting systems.
+With what I’ve read, I was able to draft out my idea and select corresponding technologies.
+Then I did the system design, created the project timeline, and split the workload.
+I would do the flink application and the visualization with grafana.
+
+I learned the flink through online resources.
+My teammate implemented an interface which I would query whether
+a customer was a new customer or an existing customer.
+I used the interface as a data source and joined it with coupon dataflow.
+I visualized it with grafana and it would send alerting emails if it broke the rule.
+
+I implemented it successfully within the given time. The project received a positive feedback
+from the client, and helped the client to monitor their coupon.
+I discovered that the flink application consume much less memory than spark.
+After that project, flink was adopted in almost all stream projects.
+Throughout this project, I learned that it is important to be curious and keep learning.
+
+4. tight deadline.
+In my previous job, I have some experience with tight deadlines. I was responsible for the on-call.
+I met several online application bugs. Once upon a time, The client reported a bug on a holiday,
+and I was at home at that time. There was a geographical distribution display in the coupon application.
+It should show how many coupons were distributed in each province. But almost all coupons' locations were
+unknown at that time. The client needed the distribution data on the holiday. So my project manager told
+me it was emergent and needed to be fixed. I debugged and tried to find the causes. It turned out that
+the database table became deprecated a few days ago. I reported it and the client gave us a new database
+table. The table schema was different. So I changed the SQL, and run the application in the testing
+environment. My project manager and the client examined the data, I deployed it on production. The client
+gave me positive feedback.
+I can give another example. Sometimes, my project manager reported small updates of the applications.
+he wanted it to be fixed in 2 days. It can be fixed by changing several lines of code. But It should be
+tested before deployment. So the deadline is quite tight. In that situation, I would change the code and
+run the application in the testing environment before getting off work on day 1. On day 2 my teammate and
+project manager would examine the data. I would deploy it afterwords.
+
+I think the tight deadline can motivate me. The key point to handle tight deadlines is to start early and
+always communicate with the manager in time.
+
+5. teammate takes all the credit.
+Once it happens to me, I will not be emotional.
+I will have a one on one conversation with the coworker.
+I will communicate with the coworker and list all my and others' contributions.
+If it happens again, I will talk about it in 1 on 1 meeting with the manager.
+To prevent it happen again, I will document each one's workload at the beginning of a project, to let each one's responsibility be clear.
+I will also document my daily work.
+In the 1 on 1 meeting with the manager,
+I will talk about what I have done and my following schedule to let the manager be familiar
+with my work.
+
+
+6. how do you fit in to new company.
+After I join a new company and a new team.
+First, I can have 15-minute one-on-one meetings with the manager or mentor
+to talk about what I am supposed to do and questions I meet in the new company.
+Second, I will schedule one on one meetings with my teammate to know
+the work they are doing.
+Third, read the onboarding process or documents.
+Fourth, I will do an onboarding plan which lists things I am going to do in next
+one or two months, discuss it with the manager or mentor.
+Fifth, I will be familiar with the project that the team working on,
+try to do some tasks which are easy to get started.
+
+
+7. face a conflict while working on a team. How did you handle that?
+My team built a spark package that can facilitate our spark application development.
+A new coworker was learning and working on it. He was supposed to develop a new feature within
+a given time. But he didn't finish it. When I discuss it with him, he complained it was
+difficult to understand the spark package. I acknowledged that there might not be enough documents
+and he didn't have to assess to the projects adopted in the package.
+We discussed how to let the package be easy to learn. After that, We added more documents and
+examples. We also created a clear design of that feature. Finally, he delivered great work.
+We worked together very well after that project.
+
+I know everything cannot run smoothly at work all the time. When there is a conflict I usually try to
+determine the source of the problem and see if it can be solved. I can schedule a meeting to discuss
+the problem and offer possible solutions. I would then try to pick the solution which appears to
+have the best outcome and put it into action.
+
+It is important to be a good listener and accept opposing views without getting upset when I have
+conflict with coworkers.
+
+8. plan for next 5 years.
+I will work as a software engineer in the next 5 years. I would like to focus on the backend because I
+feel excited when my software product is used by hundreds of millions of people.  I think will learn many frameworks and technologies
+from Google. I will try to get promoted by actively working with my teammate and delivering great projects.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
