@@ -1,9 +1,3 @@
-import java.util.ArrayList;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Random;
-import java.util.concurrent.ConcurrentSkipListSet;
-
 public class BinaryIndexTree {
 
     private int[] node;
@@ -11,12 +5,14 @@ public class BinaryIndexTree {
         node = new int[size +1];
     }
     // index is indexed 1
+
     public void update(int index, int diff){
         while(index < node.length){
             node[index] +=diff;
             index +=index & -index;
         }
     }
+
     public int query(int index){
         int sum = 0;
         while(index > 0){
@@ -27,16 +23,14 @@ public class BinaryIndexTree {
     }
 
     public static void main(String[] args) {
-        System.out.println("\t".length());
-        new LinkedHashSet<>();
-        LinkedHashSet<Integer> t = new LinkedHashSet<>();
-//        t.add(2);
-//        t.add(3);
-//        t.add(-1);
-//        t.add(1);
-        for(int i = 0; i  < 10; i++)
-        System.out.println(new Random().nextInt(2));
-        System.out.println(Integer.toBinaryString(Integer.parseInt("34", 16)));
+        BinaryIndexTree bit = new BinaryIndexTree(5);
+        bit.update(1,4);
+        bit.update(2,2);
+        bit.update(5,5);
+        System.out.println(bit.query(1));
+        System.out.println(bit.query(2));
+        System.out.println(bit.query(5));
+
     }
 
 }

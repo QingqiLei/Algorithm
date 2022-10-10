@@ -29,7 +29,7 @@ public class SegmentTreeMinimum {
                 i++;
             }
             if(j%2 == 0) {
-                minimum = Math.min(minimum, tree[i]);
+                minimum = Math.min(minimum, tree[j]);
                 j--;
             }
         }
